@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calculator app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container text-center p-2">
+        <h1 class="p-2">Calculator App</h1>
+        <div class="calculator">
+            <div class="btn-parent p-2 ">
+                <input type="text" disabled class="display p-3 fs-4" id="display">
+            </div>
+            <div class="btn-parent">
+                <button onclick="getval(1)" class="cbtn fs-1 bg-primary border-0 rounded shadow text-white ">1</button>
+                <button onclick="getval(2)" class="cbtn fs-1 bg-primary border-0 rounded shadow text-white ">2</button>
+                <button onclick="getval(3)" class="cbtn fs-1 bg-primary border-0 rounded shadow text-white ">3</button>
+                <button onclick="getval('+')" class="cbtn fs-1 bg-danger border-0 rounded shadow text-white ">+</button>
+                <button onclick="getval(4)" class="cbtn fs-1 bg-primary border-0 rounded shadow text-white ">4</button>
+                <button onclick="getval(5)" class="cbtn fs-1 bg-primary border-0 rounded shadow text-white ">5</button>
+                <button onclick="getval(6)" class="cbtn fs-1 bg-primary border-0 rounded shadow text-white ">6</button>
+                <button onclick="getval('-')" class="cbtn fs-1 bg-danger border-0 rounded shadow text-white ">-</button>
+                <button onclick="getval(7)" class="cbtn fs-1 bg-primary border-0 rounded shadow text-white ">7</button>
+                <button onclick="getval('.')"
+                    class="cbtn fs-1 bg-primary border-0 rounded shadow text-white ">8</button>
+                <button onclick="getval(9)" class="cbtn fs-1 bg-primary border-0 rounded shadow text-white ">9</button>
+                <button onclick="getval('*')" class="cbtn fs-1 bg-danger border-0 rounded shadow text-white ">*</button>
+                <button onclick="getval(0)" class="cbtn fs-1 bg-primary border-0 rounded shadow text-white ">0</button>
+                <button onclick="getval('.')"
+                    class="cbtn fs-1 bg-primary border-0 rounded shadow text-white ">.</button>
+                <button onclick="calculate('=')"
+                    class="cbtn fs-1 bg-warning border-0 rounded shadow text-white ">=</button>
+                <button onclick="getval('/')" class="cbtn fs-1 bg-danger border-0 rounded shadow text-white ">/</button>
+                <button onclick="clearall('C')"
+                    class="cbtn fs-1 bg-black border-0 rounded shadow text-white ">c</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
